@@ -1,9 +1,17 @@
 import React from "react";
+import topLogo from "../assets/logo.png";
+import moment from "moment";
 
 const Header = () => {
   return (
-    <div>
-      <h2 className="text-4xl font-bol">Voice OF Bangladesh With You</h2>
+    <div className="flex flex-col justify-center items-center py-10 gap-2">
+      <div className="logo">
+        <img className="w-[470px]" src={topLogo} alt="" />
+      </div>
+      <p className="text-slate-500">Journalism Without Fear Or Favor</p>
+      <p className="font-bold">
+        {moment().format("dddd, MMMM Do YYYY, h:mm:ssa")}
+      </p>
     </div>
   );
 };
