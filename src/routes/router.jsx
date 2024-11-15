@@ -46,6 +46,12 @@ const router = createBrowserRouter([
     path: "*",
     element: <h1 className="text-2xl">Error Page</h1>,
   },
+  {
+    feature: {
+      v7_partialHydration: true,
+      v7_skipActionErrorRevalidation: true,
+    },
+  },
 ]);
 
 export default router;
