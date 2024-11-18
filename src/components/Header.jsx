@@ -3,7 +3,7 @@ import topLogo from "../assets/logo.png";
 import moment from "moment";
 
 const Header = () => {
-  console.log(import.meta.env.VITE_a);
+  // console.log(import.meta.env.VITE_a);
 
   return (
     <div className="flex flex-col justify-center items-center py-10 gap-2">

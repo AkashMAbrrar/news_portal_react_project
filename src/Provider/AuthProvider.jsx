@@ -17,7 +17,7 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  console.log(loading, user);
+  // console.log(loading, user);
   // create a user by email and password (registration)
   const createNewUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);

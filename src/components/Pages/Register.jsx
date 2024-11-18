@@ -19,7 +19,7 @@ const Register = () => {
     const email = form.get("email");
     const photo = form.get("photo");
     const password = form.get("password");
-    console.log(name, email, password, photo);
+    // console.log(name, email, password, photo);
     createNewUser(email, password)
       .then((result) => {
         const user = result.user;
@@ -29,15 +29,15 @@ const Register = () => {
             navigate("/");
           })
           .catch((error) => {
-            console.log(error.message, "User Update Error");
+            // console.log(error.message, "User Update Error");
           });
         navigate("/");
-        console.log(user);
+        // console.log(user);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
+        // console.log(errorCode, errorMessage);
       });
   };
 
