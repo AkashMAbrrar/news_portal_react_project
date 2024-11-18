@@ -6,6 +6,7 @@ import Login from "../components/Pages/Login";
 import Register from "../components/Pages/Register";
 import NewsDetails from "../components/Pages/NewsDetails";
 import PrivetRoutes from "./PrivetRoutes";
+import Error from "../components/Error";
 
 const router = createBrowserRouter([
   {
@@ -52,7 +53,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <h1 className="text-2xl">Error Page</h1>,
+    element: <Error></Error>,
   },
   {
     feature: {
